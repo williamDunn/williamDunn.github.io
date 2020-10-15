@@ -170,9 +170,9 @@ li a {
         height: 100vh;
     }
     
-    /*ul {
-        margin-right: 10px;
-    }*/
+    ul {
+        margin-right: 25px;
+    }
 
     li {
         float: none;
