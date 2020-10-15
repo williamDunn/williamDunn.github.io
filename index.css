@@ -1,0 +1,187 @@
+/* William Dunn - 10/15/20 */
+
+body {
+    background-color: #99B191;
+    margin: 0;
+    padding: 0;
+}
+
+/* Parent Div - //////////////////////////////////////////////// */
+
+#MAIN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height:80vh;
+}
+
+/* CHILD DIV 1 - Image //////////////////////////////////////// */
+
+#logo {
+    float: left;
+    width: 24%;
+    height: 75%;
+    text-align: right;
+    margin-top: 4%;
+    margin-right: 7%;
+    margin-left: 13%;
+}
+
+img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+/* CHILD DIV 2 - Text ///////////////////////////////////////// */
+
+#introduction {
+    float: left;
+    width: 44%;
+    height: 70%;
+    margin-right: 13%;
+    margin-top: 5.7%;
+}
+
+#tidBit {
+    float: right;
+    width: 94%;
+}
+
+#numberEffect {
+    float: left;
+    width: 6%;
+}
+
+pre {
+    font: "Courier New", Courier;
+    font-size: 16px;
+    font-size: 2.2vh;
+    line-height: 1.2em;
+
+    color: #050505;
+    opacity: 1;
+}
+
+pre.numbers {
+    color: #797979;
+    opacity: .8;
+}
+
+mark {
+    background-color: #BADA55;
+}
+
+#nameMark {
+    background-color: #DB6ED8;
+}
+
+/* cursor effect */
+#cursor {
+    background: orange;
+    line-height: 17px;
+    margin-left: 3px;
+    -webkit-animation: blink 0.8s infinite;
+    width: 2px;
+    height: 2.1vh;
+  }
+  
+  @-webkit-keyframes blink {
+    0% {background: #99B191}
+    50% {background: whitesmoke}
+    100% {background: #99B191}
+  }
+
+  #twenty {
+      color: whitesmoke;
+  }
+
+/* Bottom Half of Page ///////////////////////////////////////// */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+/* Social Media Icons */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left; 
+}
+
+li a {
+    display: block;
+    color: black;
+    padding: 10px;
+  }
+
+.fab {
+    padding: 20px;
+    font-size: 4vh;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+  .fab:hover {
+    opacity: 0.7;
+}
+
+.fas {
+    padding: 20px;
+    font-size: 4vh;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fas:hover {
+    opacity: 0.7;
+}
+
+/* Responsive Design /////////////////////////////////////////// */
+
+@media (max-width: 600px) {
+    #MAIN {
+        display: none;
+    }
+
+    footer {
+        height: 100vh;
+    }
+
+    li {
+        float: none;
+        /*margin-bottom: 50px;*/
+    }
+
+    .fab {
+        padding: 41px;
+        font-size: 8vh;
+    }
+
+    .fas {
+        padding: 41px;
+        font-size: 8vh;
+    }
+}
+
+@media (max-aspect-ratio: 3/2) {
+    #logo {
+        display: none;
+    }
+
+    #introduction {
+        float: none;
+        width: 50%;
+        height: 60%;
+    }
+}
