@@ -169,10 +169,13 @@ li a {
     footer {
         height: 100vh;
     }
+    
+    ul {
+        margin-right: 30px;
+    }
 
     li {
         float: none;
-        /*margin-bottom: 50px;*/
     }
 
     .fab {
