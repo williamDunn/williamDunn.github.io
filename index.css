@@ -149,6 +149,18 @@ li a {
 
 /* Responsive Design /////////////////////////////////////////// */
 
+@media (max-aspect-ratio: 3/2) {
+    #logo {
+        display: none;
+    }
+
+    #introduction {
+        float: none;
+        width: 50%;
+        height: 60%;
+    }
+}
+
 @media (max-width: 600px) {
     #MAIN {
         display: none;
@@ -171,17 +183,5 @@ li a {
     .fas {
         padding: 41px;
         font-size: 8vh;
-    }
-}
-
-@media (max-aspect-ratio: 3/2) {
-    #logo {
-        display: none;
-    }
-
-    #introduction {
-        float: none;
-        width: 50%;
-        height: 60%;
     }
 }
