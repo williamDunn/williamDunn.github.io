@@ -1,7 +1,8 @@
 /* William Dunn - 10/15/20 */
 
 body {
-    background-color: #99B191;
+    background-color: #1f1f1f;
+    /* background-color: #99B191; */
     margin: 0;
     padding: 0;
 }
@@ -60,7 +61,8 @@ pre {
     font-size: 2.2vh;
     line-height: 1.2em;
 
-    color: #050505;
+    color: #ffffff;
+    /* color: #050505; */
     opacity: 1;
 }
 
