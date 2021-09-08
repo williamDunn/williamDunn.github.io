@@ -90,9 +90,11 @@ mark {
   }
   
   @-webkit-keyframes blink {
-    0% {background: #99B191}
+    0% {background: #1f1f1f}
+    /* 0% {background: #99B191} */
     50% {background: whitesmoke}
-    100% {background: #99B191}
+    100% {background: #1f1f1f}
+    /* 100% {background: #99B191} */
   }
 
   #twenty {
