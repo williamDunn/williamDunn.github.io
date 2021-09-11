@@ -1,4 +1,2 @@
-Updating soon
-
-ideas:
-https://typeitjs.com/
+Issues: 
+  Adjust media query
