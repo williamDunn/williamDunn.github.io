@@ -2,7 +2,7 @@
 /*-- last updated 9/10/21 */
 
 body {
-    background-color: #1f1f1f;
+    background-color: #1a1a1a;
     margin: 0;
     padding: 0;
 }
@@ -90,32 +90,32 @@ pre.numbers {
 
 #commentMark {
     color: #5c5e58;
-    background-color: #1f1f1f;
+    background-color: #1a1a1a;
 }
 
 #variableMark{
     color: #d76d3a;
-    background-color: #1f1f1f;
+    background-color: #1a1a1a;
 }
 
 #stringValueMark{
     color: #18a264;
-    background-color: #1f1f1f;
+    background-color: #1a1a1a;
 }
 
 #intValueMark{
     color: #1d75ac;
-    background-color: #1f1f1f;
+    background-color: #1a1a1a;
 }
 
 #objectMark{
     color: #dc9727;
-    background-color: #1f1f1f;
+    background-color: #1a1a1a;
 }
 
 #methodMark{
     color: #a7ec21;
-    background-color: #1f1f1f;
+    background-color: #1a1a1a;
 }
 
 /* cursor effect */
@@ -130,9 +130,9 @@ pre.numbers {
   }
   
   @-webkit-keyframes blink {
-    0% {background: #1f1f1f}
+    0% {background: #1a1a1a}
     50% {background: whitesmoke}
-    50% {background: #1f1f1f}
+    50% {background: #1a1a1a}
   }
 
   #lastLine {
