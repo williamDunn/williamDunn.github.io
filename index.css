@@ -1,10 +1,27 @@
 /* William Dunn - 10/15/20 */
+/*-- last updated 9/10/21 */
 
 body {
     background-color: #1f1f1f;
-    /* background-color: #99B191; */
     margin: 0;
     padding: 0;
+}
+
+/* Header - ////////////////////////////////////////////////// */
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:10vh;
+    margin-top: 2%;
+    margin-bottom: -5%;
+    letter-spacing: 10px;
+    font: "Courier New", Courier;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#C93741, #1f1f1f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Parent Div - //////////////////////////////////////////////// */
@@ -33,6 +50,7 @@ img {
     height: 100%;
     width: auto;
     object-fit: contain;
+    opacity: 0.97;
 }
 
 /* CHILD DIV 2 - Text ///////////////////////////////////////// */
@@ -42,7 +60,7 @@ img {
     width: 44%;
     height: 70%;
     margin-right: 13%;
-    margin-top: 5.7%;
+    margin-top: 1.7%;
 }
 
 #tidBit {
@@ -62,7 +80,6 @@ pre {
     line-height: 1.2em;
 
     color: #ffffff;
-    /* color: #050505; */
     opacity: 1;
 }
 
@@ -71,37 +88,56 @@ pre.numbers {
     opacity: .8;
 }
 
-mark {
-    background-color: #C93741;
-    opacity: .7;
-    /* background-color: #BADA55; */
+#commentMark {
+    color: #5c5e58;
+    background-color: #1f1f1f;
 }
 
-#nameMark {
-    background-color: #C93741;
-    /* background-color: #DB6ED8; */
+#variableMark{
+    color: #d76d3a;
+    background-color: #1f1f1f;
+}
+
+#stringValueMark{
+    color: #18a264;
+    background-color: #1f1f1f;
+}
+
+#intValueMark{
+    color: #1d75ac;
+    background-color: #1f1f1f;
+}
+
+#objectMark{
+    color: #dc9727;
+    background-color: #1f1f1f;
+}
+
+#methodMark{
+    color: #a7ec21;
+    background-color: #1f1f1f;
 }
 
 /* cursor effect */
 #cursor {
     background: orange;
+    opacity: 0.4;
     line-height: 17px;
     margin-left: 3px;
-    -webkit-animation: blink 0.8s infinite;
+    -webkit-animation: blink 1.2s infinite;
     width: 2px;
     height: 2.1vh;
   }
   
   @-webkit-keyframes blink {
     0% {background: #1f1f1f}
-    /* 0% {background: #99B191} */
     50% {background: whitesmoke}
-    100% {background: #1f1f1f}
-    /* 100% {background: #99B191} */
+    50% {background: #1f1f1f}
   }
 
-  #twenty {
+  #lastLine {
       color: whitesmoke;
+      opacity: 0.7;
   }
 
 /* Bottom Half of Page ///////////////////////////////////////// */
@@ -110,7 +146,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: 10vh;
 }
 
 /* Social Media Icons */
@@ -126,7 +162,8 @@ li {
 
 li a {
     display: block;
-    color: black;
+    color: #c83741;
+    opacity: 0.38;
     padding: 10px;
   }
 
@@ -173,6 +210,10 @@ li a {
         display: none;
     }
 
+    h1{
+        display: none;
+    }
+
     footer {
         height: 100vh;
     }
@@ -185,6 +226,10 @@ li a {
         float: none;
     }
 
+    li a {
+        opacity: 9;
+    }
+
     .fab {
         padding: 41px;
         font-size: 8vh;
@@ -193,5 +238,6 @@ li a {
     .fas {
         padding: 41px;
         font-size: 8vh;
+        margin-left: 3px;
     }
 }
