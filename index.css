@@ -20,11 +20,17 @@ h1{
     font: "Courier New", Courier;
     text-transform: uppercase;
     background: -webkit-linear-gradient(white, #1f1f1f);
-    /*
-    color: #c83741;
-    */
+    background: -moz-linear-gradient(white, #1f1f1f);
+    background: -ms-linear-gradient(white, #1f1f1f);
+    background: -o-linear-gradient(white, #1f1f1f);
     -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    -o-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
 }
 
 /* Parent Div - //////////////////////////////////////////////// */
@@ -128,16 +134,36 @@ pre.numbers {
     line-height: 17px;
     margin-left: 3px;
     -webkit-animation: blink 1.2s infinite;
+    -moz-animation: blink 1.2s infinite;
+    -ms-animation: blink 1.2s infinite;
+    -o-animation: blink 1.2s infinite;
     width: 2px;
     height: 2.1vh;
-  }
+}
   
-  @-webkit-keyframes blink {
+@-webkit-keyframes blink {
     0% {background: #1a1a1a}
     50% {background: whitesmoke}
     50% {background: #1a1a1a}
-  }
+}
 
+@-moz-keyframes blink {
+    0% {background: #1a1a1a}
+    50% {background: whitesmoke}
+    50% {background: #1a1a1a}
+}
+      
+@-ms-keyframes blink {
+    0% {background: #1a1a1a}
+    50% {background: whitesmoke}
+    50% {background: #1a1a1a}
+}
+    
+@-o-keyframes blink {
+    0% {background: #1a1a1a}
+    50% {background: whitesmoke}
+    50% {background: #1a1a1a}
+}
   #lastLine {
       color: whitesmoke;
       opacity: 0.7;
@@ -165,9 +191,6 @@ li {
 
 li a {
     display: block;
-    /*
-    color: #c83741;
-    */
     color: white;
     opacity: 0.46;
     padding: 10px;
