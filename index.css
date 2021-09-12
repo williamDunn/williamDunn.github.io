@@ -19,7 +19,10 @@ h1{
     letter-spacing: 10px;
     font: "Courier New", Courier;
     text-transform: uppercase;
-    background: -webkit-linear-gradient(#C93741, #1f1f1f);
+    background: -webkit-linear-gradient(white, #1f1f1f);
+    /*
+    color: #c83741;
+    */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -162,7 +165,10 @@ li {
 
 li a {
     display: block;
+    /*
     color: #c83741;
+    */
+    color: white;
     opacity: 0.46;
     padding: 10px;
   }
