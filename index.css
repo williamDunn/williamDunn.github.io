@@ -268,10 +268,18 @@ li a {
         padding: 41px;
         font-size: 8vh;
     }
+    
+    .fab:hover {
+    opacity: 1;
+    }   
 
     .fas {
         padding: 41px;
         font-size: 8vh;
         margin-left: 3px;
     }
+    
+    .fas:hover {
+    opacity: 1;
+    }   
 }
