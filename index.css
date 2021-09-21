@@ -235,6 +235,10 @@ li a {
 }
 
 @media (max-width: 600px) {
+    html {
+        overflow: hidden;
+    }
+    
     #MAIN {
         display: none;
     }
