@@ -245,9 +245,12 @@ li a {
 
     footer {
         height: 100vh;
-        position: fixed;
-        bottom: 0;
-        right: 0;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
     }
     
     ul {
