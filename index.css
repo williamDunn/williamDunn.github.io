@@ -1,184 +1,75 @@
-/* William Dunn - 10/15/20 */
-/*-- last updated 9/10/21 */
-
 body {
-    background-color: #1a1a1a;
+    background-color: #121212;
+    color: #E0E0E0;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-/* Header - ////////////////////////////////////////////////// */
+header {
+    height: 10vh;
+  }
 
-h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:10vh;
-    margin-top: 2%;
-    margin-bottom: -5%;
-    letter-spacing: 10px;
-    font: "Courier New", Courier;
-    text-transform: uppercase;
-    background: -webkit-linear-gradient(white, #1f1f1f);
-    background: -moz-linear-gradient(white, #1f1f1f);
-    background: -ms-linear-gradient(white, #1f1f1f);
-    background: -o-linear-gradient(white, #1f1f1f);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -ms-background-clip: text;
-    -o-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    -ms-text-fill-color: transparent;
-    -o-text-fill-color: transparent;
+  h1 {
+    font-size: clamp(2rem, 8vw, 5rem);
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    position: relative;
+    display: inline-block;
 }
 
-/* Parent Div - //////////////////////////////////////////////// */
+h1::after {
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 80%;
+    background-color: #1E90FF;
+    animation: blink 1s step-end infinite;
+  }
+  
+  @keyframes blink {
+    0%, 50% {
+      opacity: 1;
+    }
+    50.01%, 100% {
+      opacity: 0;
+    }
+  }
+  
 
 #MAIN {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height:80vh;
+    height: 80vh;
 }
-
-/* CHILD DIV 1 - Image //////////////////////////////////////// */
-
-#logo {
-    float: left;
-    width: 24%;
-    height: 75%;
-    text-align: right;
-    margin-top: 4%;
-    margin-right: 7%;
-    margin-left: 13%;
-}
-
-img {
-    height: 100%;
-    width: auto;
-    object-fit: contain;
-    opacity: 0.97;
-}
-
-/* CHILD DIV 2 - Text ///////////////////////////////////////// */
-
-#introduction {
-    float: left;
-    width: 44%;
-    height: 70%;
-    margin-right: 13%;
-    margin-top: 1.7%;
-}
-
-#tidBit {
-    float: right;
-    width: 94%;
-}
-
-#numberEffect {
-    float: left;
-    width: 6%;
-}
-
-pre {
-    font: "Courier New", Courier;
-    font-size: 16px;
-    font-size: 2.2vh;
-    line-height: 1.2em;
-
-    color: #ffffff;
-    opacity: 1;
-}
-
-pre.numbers {
-    color: #797979;
-    opacity: .8;
-}
-
-#commentMark {
-    color: #5c5e58;
-    background-color: #1a1a1a;
-}
-
-#variableMark{
-    color: #d76d3a;
-    background-color: #1a1a1a;
-}
-
-#stringValueMark{
-    color: #18a264;
-    background-color: #1a1a1a;
-}
-
-#intValueMark{
-    color: #1d75ac;
-    background-color: #1a1a1a;
-}
-
-#objectMark{
-    color: #dc9727;
-    background-color: #1a1a1a;
-}
-
-#methodMark{
-    color: #a7ec21;
-    background-color: #1a1a1a;
-}
-
-/* cursor effect */
-#cursor {
-    background: orange;
-    opacity: 0.4;
-    line-height: 17px;
-    margin-left: 3px;
-    -webkit-animation: blink 1.2s infinite;
-    -moz-animation: blink 1.2s infinite;
-    -ms-animation: blink 1.2s infinite;
-    -o-animation: blink 1.2s infinite;
-    width: 2px;
-    height: 2.1vh;
-}
-  
-@-webkit-keyframes blink {
-    0% {background: #1a1a1a}
-    50% {background: whitesmoke}
-    50% {background: #1a1a1a}
-}
-
-@-moz-keyframes blink {
-    0% {background: #1a1a1a}
-    50% {background: whitesmoke}
-    50% {background: #1a1a1a}
-}
-      
-@-ms-keyframes blink {
-    0% {background: #1a1a1a}
-    50% {background: whitesmoke}
-    50% {background: #1a1a1a}
-}
-    
-@-o-keyframes blink {
-    0% {background: #1a1a1a}
-    50% {background: whitesmoke}
-    50% {background: #1a1a1a}
-}
-  #lastLine {
-      color: whitesmoke;
-      opacity: 0.7;
-  }
-
-/* Bottom Half of Page ///////////////////////////////////////// */
 
 footer {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     height: 10vh;
+    background-color: #121212;
 }
 
-/* Social Media Icons */
+footer a {
+    color: #E0E0E0;
+    opacity: 0.7;
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+footer a:hover {
+    color: #1E90FF;
+    opacity: 1;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -191,98 +82,68 @@ li {
 
 li a {
     display: block;
-    color: white;
-    opacity: 0.46;
     padding: 10px;
-  }
+}
 
-.fab {
-    padding: 20px;
-    font-size: 4vh;
-    width: 50px;
+.fab, .fas {
+    padding: 16px;
+    font-size: 3vh;
+    width: 48px;
     text-align: center;
     text-decoration: none;
+    transition: transform 0.2s;
 }
 
-  .fab:hover {
-    opacity: 0.5;
-}
-
-.fas {
-    padding: 20px;
-    font-size: 4vh;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-}
-
-.fas:hover {
-    opacity: 0.5;
-}
-
-/* Responsive Design /////////////////////////////////////////// */
-
-@media (max-aspect-ratio: 3/2) {
-    #logo {
-        display: none;
-    }
-
-    #introduction {
-        float: none;
-        width: 50%;
-        height: 60%;
-    }
+.fab:hover, .fas:hover {
+    transform: translateY(-2px);
 }
 
 @media (max-width: 600px) {
     #MAIN {
-        display: none;
+      display: none;
     }
 
-    h1{
+    header {
         display: none;
     }
-
+  
+    h1 {
+      display: none;
+    }
+  
     footer {
-        height: 100vh;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-align-items: center;
-        align-items: center;
-        -webkit-justify-content: center;
-        justify-content: center;
+      background-color: #121212;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
     }
-    
+  
     ul {
-        margin-right: 12px;
-        padding: 0;
-        margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5rem;
+      padding: 0;
+      margin: 0;
+      list-style: none;
     }
-
+  
     li {
-        float: none;
+      float: none;
     }
-
-    li a {
-        opacity: 9;
+  
+    .fab, .fas {
+      padding: 0;
+      font-size: 6vh;
+      width: auto;
+      text-align: center;
+      transition: transform 0.2s;
     }
-
-    .fab {
-        padding: 41px;
-        font-size: 8vh;
+  
+    .fab:hover, .fas:hover {
+      transform: translateY(-2px);
     }
-    
-    .fab:hover {
-    opacity: 1;
-    }   
-
-    .fas {
-        padding: 41px;
-        font-size: 8vh;
-        margin-left: 3px;
-    }
-    
-    .fas:hover {
-    opacity: 1;
-    }   
-}
+  }
